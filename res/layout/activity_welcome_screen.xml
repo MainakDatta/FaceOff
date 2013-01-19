@@ -30,4 +30,15 @@
         android:layout_height="wrap_content"
         android:text="@string/filler"/>
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/time"/>
+    
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countdown" />
+
 </LinearLayout>

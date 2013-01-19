@@ -2,7 +2,9 @@ package com.example.faceoff;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class WelcomeScreen extends Activity {
 
@@ -19,4 +21,8 @@ public class WelcomeScreen extends Activity {
         return true;
     }
     
+    public void addChallenge(View view){
+    	Intent intent = new Intent(this, ChallengeActivity.class);
+    	startActivity(intent);
+    }
 }
