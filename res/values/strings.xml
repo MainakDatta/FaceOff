@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">FaceOff</string>
-    <string name="hello_world">Fuck shit up!</string>
+    <string name="title">Challenges</string>
+    <string name="button_add">+</string>
     <string name="menu_settings">Settings</string>
+    <string name="filler">Random BS</string>
 
 </resources>
