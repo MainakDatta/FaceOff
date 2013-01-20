@@ -1,28 +1,43 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     tools:context=".ChallengeActivity" >
-
-   
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/name"
-        android:ems="10"
-        android:hint="@string/opponent_name_edtext" />
-
+	
     <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignParentLeft="true"
         android:text="@string/opponent_name_text" />
-   
+    
+    <EditText android:id="@+id/names"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/challenge_name" />
+    
+    <EditText android:id="@+id/what_drink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/drink" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time" />
+    
+    <EditText android:id="@+id/time_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/time_limit" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/start_new_challenge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_button"
+        android:onClick="createChallenge" />
+</LinearLayout>

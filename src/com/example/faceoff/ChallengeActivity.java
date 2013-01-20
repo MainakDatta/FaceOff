@@ -1,10 +1,16 @@
 package com.example.faceoff;
 
-import android.os.Bundle;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.view.View;
+import android.widget.EditText;
 
 public class ChallengeActivity extends Activity {
 
@@ -38,6 +44,29 @@ public class ChallengeActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void createChallenge(View view) {
+		Intent intent = new Intent(this, WelcomeScreen.class);
+		String names = ((EditText) findViewById(R.id.names)).getText().toString();
+		String drink = ((EditText) findViewById(R.id.what_drink)).getText().toString();
+		int time = -1;
+		try {
+			time = Integer.parseInt(((EditText) findViewById(R.id.time_set)).getText().toString());
+		} catch (NumberFormatException e) {
+			startActivity(intent);
+		}
+		if(names == null || names.isEmpty() || drink == null || names.isEmpty() || time <= 0) {
+			startActivity(intent);
+		} else {
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+			String currentDateandTime = sdf.format(new Date());
+			Challenge n = new Challenge(drink, names, currentDateandTime, time);
+			Challenges.challenges.add(n);
+			startActivity(intent);
+			
+		}
+		
 	}
 
 }

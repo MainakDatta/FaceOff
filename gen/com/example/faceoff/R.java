@@ -20,10 +20,12 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int digitalClock1=0x7f090002;
-        public static final int editText1=0x7f090000;
-        public static final int menu_settings=0x7f090003;
-        public static final int name=0x7f090001;
+        public static final int digitalClock1=0x7f090004;
+        public static final int menu_settings=0x7f090005;
+        public static final int names=0x7f090000;
+        public static final int start_new_challenge=0x7f090003;
+        public static final int time_set=0x7f090002;
+        public static final int what_drink=0x7f090001;
     }
     public static final class layout {
         public static final int activity_challenge=0x7f030000;
@@ -40,39 +42,44 @@ public final class R {
          */
         public static final int app_name=0x7f050001;
         public static final int button_add=0x7f050003;
-        public static final int countdown=0x7f050006;
+        public static final int challenge_name=0x7f05000a;
+        public static final int countdown=0x7f050005;
+        public static final int drink=0x7f05000d;
+        public static final int edit_message=0x7f050008;
         public static final int filler=0x7f050000;
         public static final int menu_settings=0x7f050004;
-        public static final int opponent_name_edtext=0x7f050008;
+        public static final int opponent_name_edtext=0x7f050007;
         /** Challenge Activity
          */
-        public static final int opponent_name_text=0x7f050007;
-        public static final int pref_default_display_name=0x7f050011;
-        public static final int pref_description_social_recommendations=0x7f05000f;
+        public static final int opponent_name_text=0x7f050006;
+        public static final int pref_default_display_name=0x7f050016;
+        public static final int pref_description_social_recommendations=0x7f050014;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f050013;
+        public static final int pref_header_data_sync=0x7f050018;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f05000d;
+        public static final int pref_header_general=0x7f050012;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f050016;
-        public static final int pref_ringtone_silent=0x7f050019;
-        public static final int pref_title_add_friends_to_messages=0x7f050012;
-        public static final int pref_title_display_name=0x7f050010;
-        public static final int pref_title_new_message_notifications=0x7f050017;
-        public static final int pref_title_ringtone=0x7f050018;
-        public static final int pref_title_social_recommendations=0x7f05000e;
-        public static final int pref_title_sync_frequency=0x7f050014;
-        public static final int pref_title_system_sync_settings=0x7f050015;
-        public static final int pref_title_vibrate=0x7f05001a;
-        public static final int time=0x7f050005;
+        public static final int pref_header_notifications=0x7f05001b;
+        public static final int pref_ringtone_silent=0x7f05001e;
+        public static final int pref_title_add_friends_to_messages=0x7f050017;
+        public static final int pref_title_display_name=0x7f050015;
+        public static final int pref_title_new_message_notifications=0x7f05001c;
+        public static final int pref_title_ringtone=0x7f05001d;
+        public static final int pref_title_social_recommendations=0x7f050013;
+        public static final int pref_title_sync_frequency=0x7f050019;
+        public static final int pref_title_system_sync_settings=0x7f05001a;
+        public static final int pref_title_vibrate=0x7f05001f;
+        public static final int start_button=0x7f050010;
+        public static final int time=0x7f05000e;
+        public static final int time_limit=0x7f05000f;
         public static final int title=0x7f050002;
-        public static final int title_activity_challenge=0x7f05000b;
-        public static final int title_activity_main=0x7f05000a;
-        public static final int title_activity_settings=0x7f05000c;
+        public static final int title_activity_challenge=0x7f05000c;
+        public static final int title_activity_main=0x7f05000b;
+        public static final int title_activity_settings=0x7f050011;
     }
     public static final class style {
         /** 
